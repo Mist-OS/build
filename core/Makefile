@@ -6216,6 +6216,25 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(MIST_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(MIST_TARGET_PACKAGE) > $(MIST_TARGET_PACKAGE).md5sum
+	echo -e "==============================================================="
+	echo -e ""
+	echo -e "    ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗ "
+	echo -e "    ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝ "
+	echo -e "    ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║    "
+	echo -e "    ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║    "
+	echo -e "    ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║    "
+	echo -e "    ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝    "
+	echo -e "                                                               "
+	echo -e "                                                               "
+	echo -e "                ███╗   ███╗██╗███████╗████████╗           "
+	echo -e "                ████╗ ████║██║██╔════╝╚══██╔══╝           "
+	echo -e "                ██╔████╔██║██║███████╗   ██║              "
+	echo -e "                ██║╚██╔╝██║██║╚════██║   ██║              "
+	echo -e "                ██║ ╚═╝ ██║██║███████║   ██║              "
+	echo -e "                ╚═╝     ╚═╝╚═╝╚══════╝   ╚═╝              "
+	echo -e ""
+	echo -e "=============================================================="
+	echo -e ""
 	@echo "**Package completed"**: $(MIST_TARGET_PACKAGE)"
 
 ifeq ($(BOARD_BUILD_RETROFIT_DYNAMIC_PARTITIONS_OTA_PACKAGE),true)
